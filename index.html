@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume Builders</h1>
+    <form id="Resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3" placeholder="Enter Your Address" required></textarea>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" rows="3" placeholder="Enter Your skills" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" rows="3" placeholder="Enter Your education" required></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" rows="3" placeholder="Enter Your Experience" required></textarea>
+        </fieldset>
+        
+        <button type="submit">Generate Resume</button>
+    </form>
+    <br/>
+    <!--Dynamic Resume-->
+    <div id="resume-display">
+        <!--resume will be generated below-->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
